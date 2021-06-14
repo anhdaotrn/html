@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+
+   page
+         - index
+         
+
+--------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------
+  index
+--------------------------------------------------------------------------------------------*/
+#frame1-top {
+  justify-content: center;
+  align-items: center;
+}
+
+#frame1-top li {
+  width: 50%;
+  position: relative;
+}
+
+#frame1-top li img {
+  width: 100%;
+}
+
+#frame1-top li h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#frame2-top .text {
+  padding: 27px 0 24px 0;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+#frame2-top .list-image li {
+  width: 20%;
+}
+
+#frame2-top .list-image li img {
+  width: 100%;
+}

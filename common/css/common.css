@@ -1,0 +1,265 @@
+@charset "utf-8";
+@import url('https://use.fontawesome.com/releases/v5.13.0/css/all.css');
+/*--------------------------------------------------------------------------------------------------
+
+   common
+
+--------------------------------------------------------------------------------------------------*/
+
+
+/*reset-------------------------------------------------*/
+body,div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+header,section,article,aside,footer,nav {
+ display: block;
+}
+
+
+
+/*-------------------------------------------------reset*/
+
+
+/*common-------------------------------------------------*/
+@font-face {
+  font-family: gothamhtfbook;
+  src: url(font/gothamhtf-book-webfont.ttf);
+}
+
+@font-face {
+  font-family: gothamhtfbold;
+  src: url(font/gothamhtf-bold-webfont.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 14px;
+  font-family: gothamhtfbook;
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+ul,li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  display: inline-table;
+}
+
+/* mac \*/
+* html .clear {
+  height: 1%;
+}
+
+.clear {
+  display: block;
+}
+
+/*-------------------------------------------------common*/
+
+
+/*--------------------------------------------------------------------------------------------
+  header
+--------------------------------------------------------------------------------------------*/
+header {
+  width: 100%;
+  height: 850px;
+  background: url(../image/banner.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header h1 {
+  font-family: gothamhtfbold;
+  letter-spacing: 1px;
+  font-size: 70px;
+  text-align: center;
+  position: relative;
+  top: calc(50% - 10px);
+  transform: translateY(-50%);
+}
+
+nav {
+  position: absolute;
+  left: 3.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav li a {
+  letter-spacing: 3px;
+}
+
+nav li {
+  margin-bottom: 30px;
+}
+
+
+/*------------------------------------------------------------------------------------------------
+  content
+--------------------------------------------------------------------------------------------------*/
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.al-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.al-right {
+  text-align: right;
+}
+
+.al-left {
+  text-align: left;
+}
+
+.flex {
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;   
+}
+
+h2 {
+  font-size: 50px;
+  font-family: gothamhtfbold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 span {
+  font-size:  30px;
+  display: block;
+  line-height: 1;
+}
+
+/*------------------------------------------------------------------------------------------------
+  footer
+--------------------------------------------------------------------------------------------------*/
+footer #info {
+  width: 87%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+footer #info .left {
+  padding: 45px 0 40px 0;
+}
+
+footer #info .left .title,
+footer #info .right .title {
+  font-family: gothamhtfbold;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer #info .left .search-box {
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+footer #info .left .search-box input {
+  width: 490px;
+  height: 45px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+footer #info .left .search-box button {
+  font-family: gothamhtfbold;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+}
+
+footer #info .left .list-social li {
+  display: inline-block;
+  margin: 0 20px 0 10px;
+  vertical-align: middle;
+}
+
+footer #info .right {
+  margin: 53px 0 30px 0;
+}
+
+footer #info .right .list-link li a {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer #info .left .list-social li i {
+  font-size: 28px;
+}
+
+footer #menu {
+  padding: 47px 0 68px 0;
+  justify-content: center;
+}
+
+footer #menu li {
+  padding: 0 14px;
+  border-right: 2px solid #a3a3a3;
+}
+
+footer #menu li:last-child {
+  border-right: none;
+}
+
+footer #menu a {
+  font-size: 11px;
+  letter-spacing: 0.6px;
+}

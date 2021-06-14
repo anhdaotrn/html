@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+
+   second
+
+--------------------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 960px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  header {
+    height: 500px;
+    background: url(../image/banner.jpg) no-repeat right center;
+    background-size: cover;
+    text-shadow: 3px 3px 5px #fff;
+  }
+
+  header h1 {
+    font-size: 35px;
+    text-align: right;
+    padding-right: 6.5%;
+  }
+
+  #frame1-top {
+    display: block;
+  }
+
+  #frame1-top li {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h2 span {
+    font-size: 15px;
+  }
+
+  #frame2-top .text {
+    padding: 18px 0 16px 0;
+    font-size: 15px;
+  }
+
+  #frame2-top .list-image {
+    display: block;
+  }
+
+  #frame2-top .list-image li {
+    width: 100%;
+  }
+
+  footer #info {
+    display: block;
+  }
+
+  footer #info .left {
+    padding: 30px 0 26px 0;
+  }
+
+  footer #info .left .title, 
+  footer #info .right .title {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  footer #info .left .search-box {
+    margin-bottom: 20px;
+  }
+
+  footer #info .left .search-box input {
+    width: calc(100% - 40px);
+    height: 30px;
+    padding: 5px;
+    margin-right: 5px;
+ }
+
+ footer #info .left .search-box button {
+    width: 40px;
+    height: 30px;
+    font-size: 15px;
+}
+
+footer #info .left .search-box {
+  margin-bottom: 14px;
+}
+
+footer #info .left .list-social li {
+  margin: 0 14px 0 7px;
+}
+
+footer #info .right {
+  margin: 0px 0 20px 0;
+}
+
+footer #info .right .list-link {
+  margin-top: 20px;
+}
+
+footer #menu {
+  padding: 30px 0 25px 0;
+  display: block;
+}
+
+footer #menu li {
+  padding: 0 6.5%;
+  border-right: none;
+}
+
+footer #menu a {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+footer #info .right .list-link li a {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+ 
+}
+
+@media all and (max-width: 400px) {
+  header h1 {
+    font-size: 25px;
+  }
+}
